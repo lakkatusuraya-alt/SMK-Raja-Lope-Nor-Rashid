@@ -43,24 +43,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (joinForm && feedback) {
         joinForm.addEventListener('submit', (e) => {
-            e.preventDefault(); // Menghentikan muat semula halaman (page refresh)
+            e.preventDefault();
 
             const name = document.getElementById('studentName').value.trim();
-            const email = document.getElementById('studentEmail').value.trim();
             const track = document.getElementById('trackPreference').value;
 
-            // Beri maklum balas sukses kepada pelajar
             feedback.textContent = `Terima kasih, ${name}! Permohonan anda untuk fokus ${track.toUpperCase()} telah berjaya dihantar secara simulasi.`;
             feedback.className = "success";
             feedback.classList.remove('hidden');
 
-            // Set semula borang input
             joinForm.reset();
 
-            // Sorokkan semula notifikasi maklum balas selepas 6 saat
             setTimeout(() => {
                 feedback.classList.add('hidden');
             }, 6000);
         });
     }
+
+    // --- Pengendali Butang Kembali ke Atas (Back to Top) ---
+    const backToTopBtn = document.getElementById('backToTop');
+    if (backToTopBtn) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.add('show');
+            } else {
+                backToTopBtn.classList.remove('show');
+            }
+        });
+    }
+    
 });

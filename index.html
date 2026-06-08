@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMK Raja Lope Nor Rashid | Hub Sejarah & Kod</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="container navbar">
+            <div class="logo" style="display: flex; align-items: center; gap: 12px;">
+                <h2>SMKRLNR <span>Tech</span></h2>
+                <img src="picture/SMK Raja Lope.png" alt="Logo SMKRLNR" style="height: 40px; width: auto; object-fit: contain;">
+            </div>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html" class="active">Utama</a></li>
+                    <li><a href="#about">Lokasi</a></li>
+                    <li><a href="Sejarah.html">Sejarah</a></li>
+                    <li><a href="kelab-sukan.html">Kelab & Sukan</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="mobileMenu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>SMKRLNR</h1>
+            <p>Memperkasakan pelajar SMK Raja Lope Nor Rashid untuk membina masa depan melalui kod, logik, dan inovasi tanpa melupakan warisan sejarah.</p>
+            <a href="Sejarah.html" class="btn">Terokai Sejarah Sekolah</a>
+        </div>
+    </section>
+
+    <section id="about" class="about container">
+        <h2>Lokasi SMK Raja Lope Nor Rashid</h2>
+        <div class="about-card">
+            <p>Sekolah Menengah Kebangsaan Raja Lope Nor Rashid (SMKRLNR) ialah sebuah sekolah menengah kebangsaan yang tersergam indah di <strong>Jalan Sungai Labu Bawah</strong>, menawarkan persekitaran pembelajaran yang kondusif bagi melahirkan generasi celik digital.</p>
+            
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.9142858888!2d100.3853!3d5.0743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304b21ec4f67623d%3A0xcbde829bc7886a12!2sSMK%20Raja%20Lope%20Nor%20Rashid!5e0!3m2!1sms!2smy!4v1717840000000!5m2!1sms!2smy" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="map-button-wrapper">
+                <a href="https://maps.app.goo.gl/g69W8FpE6pA8mP8p8" target="_blank" class="btn btn-map">
+                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16" style="margin-right: 8px; vertical-align: middle;"><path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg>
+                    Petunjuk Arah Jalan (Google Maps)
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="school-song" class="container" style="padding: 60px 20px; text-align: center;">
+        <h2 style="margin-bottom: 30px; color: var(--primary-color, #0b1b3d);">Lagu Rasmi Sekolah</h2>
+        
+        <div style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255,255,255,0.1); padding: 30px; border-radius: 15px; max-width: 600px; margin: 0 auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+            
+            <div style="margin-bottom: 30px;">
+                <p style="font-weight: bold; margin-bottom: 12px; font-size: 1.1rem;">🎵 Dengarkan Di Sini</p>
+                <audio controls style="width: 100%; max-width: 400px;">
+                    <source src="audio/Lagu Sekolah SMK Raja Lope Nor Rashid.mp3" type="audio/mpeg">
+                    Browser anda tidak menyokong elemen audio HTML5.
+                </audio>
+            </div>
+
+            <div>
+                <p style="font-weight: bold; margin-bottom: 15px; font-size: 1.1rem;">📜 Gambar Lirik Lagu</p>
+                <img src="picture/Lagu sekolah.png" alt="Lirik Lagu Sekolah SMKRLNR" style="width: 100%; max-width: 450px; height: auto; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.15); display: block; margin: 0 auto;">
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 SMK Raja Lope Nor Rashid. Diadun sempurna untuk kecemerlangan akademik & digital.</p>
+    </footer>
+
+    <script src="script.js"></script>
+	
+	<a href="#" class="back-to-top" id="backToTop" aria-label="Kembali ke atas">
+    <svg width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"/>
+    </svg>
+</a>
+</body>
+</html>

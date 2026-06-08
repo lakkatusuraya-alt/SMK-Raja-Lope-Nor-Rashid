@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelab & Sukan - SMKRLNR</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="container navbar">
+            <div class="logo" style="display: flex; align-items: center; gap: 12px;">
+                <h2>SMKRLNR <span>Tech</span></h2>
+                <img src="picture/SMK Raja Lope.png" alt="Logo SMKRLNR" style="height: 40px; width: auto; object-fit: contain;">
+            </div>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html" class="active">Utama</a></li>
+                    <li><a href="Sejarah.html">Sejarah</a></li>
+					<li><a href="kelab-sukan.html" class="active">Kelab & Sukan</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" style="height: 45vh; background: linear-gradient(rgba(11, 27, 61, 0.9), rgba(22, 50, 108, 0.85));">
+        <div class="container hero-content">
+            <h1>Kelab & Sukan</h1>
+            <p>Melahirkan generasi yang seimbang dari segi akademik, sukan, dan kepimpinan digital.</p>
+        </div>
+    </section>
+
+    <section class="history-section">
+        <div class="container">
+            <h2 class="section-title">Kelab & Persatuan</h2>
+            
+            <div class="grid">
+                <div class="card">
+                    <span class="card-badge">Digital</span>
+                    <h3>Kelab Komputer & Robotik</h3>
+                    <p>Tempat pemupukan bakat murid dalam bidang asas pengaturcaraan (coding), pembinaan laman web, dan asas teknologi robotik masa kini.</p>
+                    <div class="card-img-container">
+                        <a href="https://youtube.com/@kelabcyberkid?si=6HbNy8uAHKN_PP8G" target="_blank">
+                        <img src="picture/kelab-komputer.jpg" alt="Kelab Komputer">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <span class="card-badge">Akademik</span>
+                    <h3>Persatuan STEM</h3>
+                    <p>Menggabungkan elemen Sains, Teknologi, Kejuruteraan, dan Matematik menerusi eksperimen dan projek inovasi yang mencabar minda kreatifik.</p>
+                    <div class="card-img-container">
+                        <img src="picture/kelab-stem.jpg" alt="Persatuan STEM">
+                    </div>
+                </div>
+
+                <div class="card">
+                    <span class="card-badge">Sila Pilih</span>
+                    <h3>Kelab Bimbingan & Kerjaya</h3>
+                    <p>Membantu pelajar mengenali potensi diri, membina kemahiran insaniah (soft skills), serta pendedahan awal mengenai hala tuju kerjaya masa depan.</p>
+                    <div class="card-img-container">
+                        <img src="picture/kelab-kerjaya.jpg" alt="Kelab Kerjaya">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="updates" style="background-color: var(--bg-light);">
+        <div class="container">
+            <h2 class="section-title" style="text-align:center; margin-bottom: 3.5rem;">Sukan & Permainan</h2>
+            
+            <div class="grid">
+                <div class="card" style="border-top: 4px solid var(--accent-color);">
+                    <span class="card-badge" style="background-color: var(--primary-color); color: white;">Padang</span>
+                    <h3>Kelab Bola Sepak</h3>
+                    <p>Melatih disiplin, kerjasama pasukan, dan taktikal bola sepak moden demi melahirkan atlet sekolah yang berdaya saing tinggi.</p>
+                    <div class="card-img-container">
+                        <img src="picture/sukan-bolasepak.jpg" alt="Bola Sepak">
+                    </div>
+                </div>
+
+                <div class="card" style="border-top: 4px solid var(--accent-color);">
+                    <span class="card-badge" style="background-color: var(--primary-color); color: white;">Gelanggang</span>
+                    <h3>Kelab Badminton</h3>
+                    <p>Fokus kepada teknik pukulan, ketangkasan pergerakan kaki, dan strategi perlawanan perseorangan mahupun beregu.</p>
+                    <div class="card-img-container">
+                        <img src="picture/sukan-badminton.jpg" alt="Badminton">
+                    </div>
+                </div>
+
+                <div class="card" style="border-top: 4px solid var(--accent-color);">
+                    <span class="card-badge" style="background-color: var(--primary-color); color: white;">Minda</span>
+                    <h3>Kelab Catur & Permainan Dalaman</h3>
+                    <p>Mengasah ketajaman strategi, analisis situasi pantas, dan kesabaran tinggi melalui simulasi perlawanan catur peringkat sekolah.</p>
+                    <div class="card-img-container">
+                        <img src="picture/sukan-catur.jpg" alt="Catur">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 SMK Raja Lope Nor Rashid. Hak Cipta Terpelihara.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+	
+	<a href="#" class="back-to-top" id="backToTop" aria-label="Kembali ke atas">
+    <svg width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"/>
+    </svg>
+</a>
+</body>
+</html>

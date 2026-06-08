@@ -32,6 +32,8 @@
 
     <section class="hero">
         <div class="container hero-content">
+            <p id="welcomeGreeting" style="color: var(--accent-color); font-weight: 600; font-size: 1.4rem; margin-bottom: 10px; letter-spacing: 0.5px;"></p>
+            
             <h1>SMKRLNR</h1>
             <p>Memperkasakan pelajar SMK Raja Lope Nor Rashid untuk membina masa depan melalui kod, logik, dan inovasi tanpa melupakan warisan sejarah.</p>
             <a href="Sejarah.html" class="btn">Terokai Sejarah Sekolah</a>
@@ -77,16 +79,39 @@
         </div>
     </section>
 
+    <section class="contact-section" style="display: flex; justify-content: center; align-items: center;">
+        <div class="container contact-box">
+            <h2>Sertai Kelab Kod SMKRLNR</h2>
+            <p>Bina masa depan digital anda hari ini. Isi borang di bawah untuk mendaftar kelas simulasi.</p>
+            
+            <form id="joinForm">
+                <input type="text" id="studentName" placeholder="Nama Penuh Anda" required>
+                <input type="email" id="studentEmail" placeholder="E-mel Rasmi (DELIMa / Peribadi)" required>
+                
+                <select id="trackPreference" required>
+                    <option value="" disabled selected>Pilih Fokus Pilihan Anda</option>
+                    <option value="Asas Pengaturcaraan">Asas Pengaturcaraan (C++)</option>
+                    <option value="Pembangunan Web">Pembangunan Web (HTML / CSS / JS)</option>
+                    <option value="Sains Data & AI">Sains Data & Rangkaian PC</option>
+                </select>
+                
+                <button type="submit" class="btn btn-submit">Hantar Permohonan</button>
+            </form>
+            
+            <div id="formFeedback" class="hidden"></div>
+        </div>
+    </section>
+
     <footer>
         <p>© 2026 SMK Raja Lope Nor Rashid. Diadun sempurna untuk kecemerlangan akademik & digital.</p>
     </footer>
 
     <script src="script.js"></script>
-	
-	<a href="#" class="back-to-top" id="backToTop" aria-label="Kembali ke atas">
-    <svg width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"/>
-    </svg>
-</a>
+    
+    <a href="#" class="back-to-top" id="backToTop" aria-label="Kembali ke atas">
+        <svg width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"/>
+        </svg>
+    </a>
 </body>
 </html>
